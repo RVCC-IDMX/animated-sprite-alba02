@@ -1,0 +1,33 @@
+@import 'typography.css';
+
+  body {
+    background-color: rgb(199, 229, 202);
+   font-family:'Quirky Robot';
+   text-align: center;
+   font-size: 7em;
+   text-shadow: 2px 2px 4px rgb(148, 141, 148);
+   color:black;
+  text-decoration: underline black 6px;
+} 
+    
+
+
+
+.world{
+    position:absolute;
+    top:10%;
+    left:50%;
+    background: transparent url('world.png') 0 0 no-repeat;
+    width: 100px;
+    height: 100px;
+    transform:translate(-50%, -50%);
+    margin: 2em auto;
+    animation:run 1s steps(50) infinite;
+}
+
+@keyframes run{
+    100%{
+        background-position: -5000px, 0;
+    }
+}
+
